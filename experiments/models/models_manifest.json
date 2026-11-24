@@ -1,0 +1,1608 @@
+[
+  {
+    "model_id": "defended_pytorch_mlp_1794504479086",
+    "model_type": "Defended PyTorch MLP",
+    "file_path": "experiments/models/defended_pytorch_mlp_1794504479086.pt",
+    "hyperparameters": {
+      "adv_training": true,
+      "attack": "FGSM",
+      "epsilon": 0.1
+    },
+    "created_at": "2026-11-12T22:57:59.389045",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.166,
+      "inference_time_ms": 0.0049,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2178,
+          "accuracy": 0.9524
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/defended_pytorch_mlp_1794504479086.scaler.joblib",
+    "imputer_file_path": "experiments/models/defended_pytorch_mlp_1794504479086.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "pytorch_mlp_1794504398556",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794504398556.pt",
+    "hyperparameters": {
+      "batch_size": 128,
+      "hidden_dim2": 16,
+      "epochs": 2,
+      "hidden_dim1": 32
+    },
+    "created_at": "2026-11-12T22:56:38.932518",
+    "metrics": {
+      "accuracy": 0.9986,
+      "precision": 0.9959,
+      "recall": 1.0,
+      "f1_score": 0.998,
+      "fpr": 0.0022,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          454,
+          1
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9978021978021978,
+          "f1-score": 0.9988998899889989,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.9959349593495935,
+          "recall": 1.0,
+          "f1-score": 0.9979633401221996,
+          "support": 245.0
+        },
+        "accuracy": 0.9985714285714286,
+        "macro avg": {
+          "precision": 0.9979674796747968,
+          "recall": 0.9989010989010989,
+          "f1-score": 0.9984316150555992,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9985772357723577,
+          "recall": 0.9985714285714286,
+          "f1-score": 0.9985720975356192,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.329,
+      "inference_time_ms": 0.0017,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.5119,
+          "accuracy": 0.8025
+        },
+        {
+          "epoch": 2,
+          "loss": 0.293,
+          "accuracy": 0.9668
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794504398556.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794504398556.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "xgboost_1794504398400",
+    "model_type": "XGBoost",
+    "file_path": "experiments/models/xgboost_1794504398400.joblib",
+    "hyperparameters": {
+      "n_estimators": 20,
+      "learning_rate": 0.1,
+      "max_depth": 4
+    },
+    "created_at": "2026-11-12T22:56:38.520390",
+    "metrics": {
+      "accuracy": 0.9971,
+      "precision": 0.9919,
+      "recall": 1.0,
+      "f1_score": 0.9959,
+      "fpr": 0.0044,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          453,
+          2
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9956043956043956,
+          "f1-score": 0.9977973568281938,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.9919028340080972,
+          "recall": 1.0,
+          "f1-score": 0.9959349593495935,
+          "support": 245.0
+        },
+        "accuracy": 0.9971428571428571,
+        "macro avg": {
+          "precision": 0.9959514170040487,
+          "recall": 0.9978021978021978,
+          "f1-score": 0.9968661580888937,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.997165991902834,
+          "recall": 0.9971428571428571,
+          "f1-score": 0.9971455177106837,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.077,
+      "inference_time_ms": 0.0061
+    },
+    "scaler_file_path": "experiments/models/xgboost_1794504398400.scaler.joblib",
+    "imputer_file_path": "experiments/models/xgboost_1794504398400.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "random_forest_1794504398182",
+    "model_type": "Random Forest",
+    "file_path": "experiments/models/random_forest_1794504398182.joblib",
+    "hyperparameters": {
+      "n_estimators": 20,
+      "max_depth": 8
+    },
+    "created_at": "2026-11-12T22:56:38.319398",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.081,
+      "inference_time_ms": 0.0305
+    },
+    "scaler_file_path": "experiments/models/random_forest_1794504398182.scaler.joblib",
+    "imputer_file_path": "experiments/models/random_forest_1794504398182.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "pytorch_mlp_1794464623610",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794464623610.pt",
+    "hyperparameters": {
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "epochs": 1
+    },
+    "created_at": "2026-11-12T11:53:43.834980",
+    "metrics": {
+      "accuracy": 0.9743,
+      "precision": 0.9316,
+      "recall": 1.0,
+      "f1_score": 0.9646,
+      "fpr": 0.0396,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          437,
+          18
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9604395604395605,
+          "f1-score": 0.9798206278026906,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.9315589353612167,
+          "recall": 1.0,
+          "f1-score": 0.9645669291338582,
+          "support": 245.0
+        },
+        "accuracy": 0.9742857142857143,
+        "macro avg": {
+          "precision": 0.9657794676806084,
+          "recall": 0.9802197802197803,
+          "f1-score": 0.9721937784682744,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9760456273764258,
+          "recall": 0.9742857142857143,
+          "f1-score": 0.9744818332685993,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.174,
+      "inference_time_ms": 0.0096,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.4474,
+          "accuracy": 0.8475
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794464623610.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794464623610.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "pytorch_mlp_1794464253213",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794464253213.pt",
+    "hyperparameters": {
+      "epochs": 15,
+      "batch_size": 64,
+      "learning_rate": 0.001
+    },
+    "created_at": "2026-11-12T11:47:41.807449",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 3.372,
+      "inference_time_ms": 0.0038,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2028,
+          "accuracy": 0.9543
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0387,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0193,
+          "accuracy": 0.9986
+        },
+        {
+          "epoch": 4,
+          "loss": 0.012,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0072,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0067,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0049,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0045,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0031,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0021,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 11,
+          "loss": 0.0019,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 12,
+          "loss": 0.0015,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 13,
+          "loss": 0.0013,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 14,
+          "loss": 0.0031,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 15,
+          "loss": 0.0024,
+          "accuracy": 0.9993
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794464253213.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794464253213.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "pytorch_mlp_1794462614292",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794462614292.pt",
+    "hyperparameters": {
+      "epochs": 15,
+      "batch_size": 64,
+      "learning_rate": 0.001
+    },
+    "created_at": "2026-11-12T11:20:24.773470",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 10.368,
+      "inference_time_ms": 0.0082,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2265,
+          "accuracy": 0.9507
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0469,
+          "accuracy": 0.9968
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0199,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 4,
+          "loss": 0.0113,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0105,
+          "accuracy": 0.9986
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0075,
+          "accuracy": 0.9989
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0056,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0034,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0033,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0026,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 11,
+          "loss": 0.0021,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 12,
+          "loss": 0.0024,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 13,
+          "loss": 0.0016,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 14,
+          "loss": 0.0011,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 15,
+          "loss": 0.0031,
+          "accuracy": 0.9993
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794462614292.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794462614292.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "defended_pytorch_mlp_1794462444417",
+    "model_type": "Defended PyTorch MLP",
+    "file_path": "experiments/models/defended_pytorch_mlp_1794462444417.pt",
+    "hyperparameters": {
+      "adv_training": true,
+      "attack": "FGSM",
+      "epsilon": 0.2
+    },
+    "created_at": "2026-11-12T11:17:31.621960",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 6.972,
+      "inference_time_ms": 0.0063,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.1955,
+          "accuracy": 0.9553
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0346,
+          "accuracy": 0.9976
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0186,
+          "accuracy": 0.9982
+        },
+        {
+          "epoch": 4,
+          "loss": 0.0113,
+          "accuracy": 0.9988
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0083,
+          "accuracy": 0.9988
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0072,
+          "accuracy": 0.9991
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0048,
+          "accuracy": 0.9991
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0054,
+          "accuracy": 0.9988
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0031,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0055,
+          "accuracy": 0.9988
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/defended_pytorch_mlp_1794462444417.scaler.joblib",
+    "imputer_file_path": "experiments/models/defended_pytorch_mlp_1794462444417.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "pytorch_mlp_1794462376311",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794462376311.pt",
+    "hyperparameters": {
+      "epochs": 15,
+      "batch_size": 64,
+      "learning_rate": 0.001
+    },
+    "created_at": "2026-11-12T11:16:29.300878",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 12.826,
+      "inference_time_ms": 0.0111,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2265,
+          "accuracy": 0.9507
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0469,
+          "accuracy": 0.9968
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0199,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 4,
+          "loss": 0.0113,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0105,
+          "accuracy": 0.9986
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0075,
+          "accuracy": 0.9989
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0056,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0034,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0033,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0026,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 11,
+          "loss": 0.0021,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 12,
+          "loss": 0.0024,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 13,
+          "loss": 0.0016,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 14,
+          "loss": 0.0011,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 15,
+          "loss": 0.0031,
+          "accuracy": 0.9993
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794462376311.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794462376311.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  },
+  {
+    "model_id": "defended_pytorch_mlp_1794112742",
+    "model_type": "Defended PyTorch MLP",
+    "file_path": "experiments/models/defended_pytorch_mlp_1794112742.pt",
+    "hyperparameters": {
+      "adv_training": true,
+      "attack": "FGSM",
+      "epsilon": 0.2
+    },
+    "created_at": "2026-11-08T10:09:03.392301",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 1.218,
+      "inference_time_ms": 0.0011,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.1944,
+          "accuracy": 0.9553
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0349,
+          "accuracy": 0.9973
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0183,
+          "accuracy": 0.9985
+        },
+        {
+          "epoch": 4,
+          "loss": 0.011,
+          "accuracy": 0.9979
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0084,
+          "accuracy": 0.9994
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0059,
+          "accuracy": 0.9991
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0041,
+          "accuracy": 0.9997
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0035,
+          "accuracy": 0.9997
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0072,
+          "accuracy": 0.9982
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0033,
+          "accuracy": 0.9994
+        }
+      ]
+    }
+  },
+  {
+    "model_id": "pytorch_mlp_1794132486",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794132486.pt",
+    "hyperparameters": {
+      "epochs": 10,
+      "batch_size": 64
+    },
+    "created_at": "2026-11-08T10:08:13.570350",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 1.32,
+      "inference_time_ms": 0.0058,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2265,
+          "accuracy": 0.9507
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0469,
+          "accuracy": 0.9968
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0199,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 4,
+          "loss": 0.0113,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0105,
+          "accuracy": 0.9986
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0075,
+          "accuracy": 0.9989
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0056,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0034,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0033,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0026,
+          "accuracy": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "model_id": "xgboost_1794132485",
+    "model_type": "XGBoost",
+    "file_path": "experiments/models/xgboost_1794132485.joblib",
+    "hyperparameters": {
+      "n_estimators": 50,
+      "max_depth": 5,
+      "learning_rate": 0.1
+    },
+    "created_at": "2026-11-08T10:08:06.532980",
+    "metrics": {
+      "accuracy": 0.9971,
+      "precision": 0.9919,
+      "recall": 1.0,
+      "f1_score": 0.9959,
+      "fpr": 0.0044,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          453,
+          2
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9956043956043956,
+          "f1-score": 0.9977973568281938,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.9919028340080972,
+          "recall": 1.0,
+          "f1-score": 0.9959349593495935,
+          "support": 245.0
+        },
+        "accuracy": 0.9971428571428571,
+        "macro avg": {
+          "precision": 0.9959514170040487,
+          "recall": 0.9978021978021978,
+          "f1-score": 0.9968661580888937,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.997165991902834,
+          "recall": 0.9971428571428571,
+          "f1-score": 0.9971455177106837,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.537,
+      "inference_time_ms": 0.0052
+    }
+  },
+  {
+    "model_id": "random_forest_1794132485",
+    "model_type": "Random Forest",
+    "file_path": "experiments/models/random_forest_1794132485.joblib",
+    "hyperparameters": {
+      "n_estimators": 50,
+      "max_depth": 10
+    },
+    "created_at": "2026-11-08T10:08:05.961940",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.226,
+      "inference_time_ms": 0.0522
+    }
+  }
+]

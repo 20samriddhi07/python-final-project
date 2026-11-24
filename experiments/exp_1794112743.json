@@ -1,0 +1,104 @@
+{
+  "id": "exp_1794112743",
+  "timestamp": "2026-11-08 10:09:03",
+  "type": "robustness_evaluation",
+  "details": {
+    "model_id": "PyTorch MLP",
+    "evaluated_samples": 100,
+    "attack_samples_count": 30,
+    "epsilon": 0.2,
+    "robustness_score": 100.0,
+    "clean_accuracy": 100.0,
+    "worst_adversarial_accuracy": 100.0,
+    "max_attack_success_rate": 0.0,
+    "conditions": [
+      {
+        "condition": "Clean Test Data",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "FGSM Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "PGD Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "Black-Box Query Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      }
+    ],
+    "confusion_matrices": {
+      "clean": [
+        [
+          70,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "fgsm": [
+        [
+          70,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "pgd": [
+        [
+          70,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "bbox": [
+        [
+          70,
+          0
+        ],
+        [
+          0,
+          30
+        ]
+      ]
+    },
+    "timestamp": "2026-11-08T10:09:03.641051"
+  }
+}

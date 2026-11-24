@@ -1,0 +1,599 @@
+{
+  "id": "exp_1794465434",
+  "timestamp": "2026-11-12 12:07:14",
+  "type": "adversarial_attack",
+  "details": {
+    "target_model": "defended_pytorch_mlp_1794462444417",
+    "configured_attack": "Black-box Query",
+    "actual_method": "Black-box Query",
+    "method_note": "",
+    "epsilon": 0.55,
+    "iterations": 1,
+    "evaluated_samples": 245,
+    "initially_detected_attacks": 245,
+    "successful_evasions": 0,
+    "attack_success_rate": 0.0,
+    "clean_detection_rate": 100.0,
+    "adversarial_detection_rate": 100.0,
+    "perturbation_linf": 1.0,
+    "perturbation_l2_mean": 1.8104,
+    "sample_comparisons": [
+      {
+        "sample_id": 1,
+        "original_prediction": "ATTACK",
+        "original_confidence": 99.99,
+        "adversarial_prediction": "ATTACK",
+        "adversarial_confidence": 99.78,
+        "evasion_success": false,
+        "features": [
+          {
+            "feature": "Destination Port",
+            "original": 31862.001,
+            "adversarial": 31862.0,
+            "delta": -0.001,
+            "is_immutable": true
+          },
+          {
+            "feature": "Flow Duration",
+            "original": 1823.993,
+            "adversarial": 1823.993,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Fwd Packets",
+            "original": 1.0,
+            "adversarial": 1.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Backward Packets",
+            "original": -0.0,
+            "adversarial": 0.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Fwd Packets",
+            "original": -0.0,
+            "adversarial": 0.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Bwd Packets",
+            "original": 0.0,
+            "adversarial": 3240.936,
+            "delta": 3240.936,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Max",
+            "original": -0.0,
+            "adversarial": 0.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Min",
+            "original": -0.0,
+            "adversarial": 93.293,
+            "delta": 93.293,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Mean",
+            "original": -0.0,
+            "adversarial": 0.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Std",
+            "original": 0.0,
+            "adversarial": 25.746,
+            "delta": 25.746,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Max",
+            "original": -0.0,
+            "adversarial": 342.249,
+            "delta": 342.249,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Std",
+            "original": 0.0,
+            "adversarial": 52.808,
+            "delta": 52.808,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow Bytes/s",
+            "original": 0.003,
+            "adversarial": 0.0,
+            "delta": -0.003,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Mean",
+            "original": 1824.0,
+            "adversarial": 15845.031,
+            "delta": 14021.031,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Max",
+            "original": 1823.994,
+            "adversarial": 214921.958,
+            "delta": 213097.964,
+            "is_immutable": false
+          }
+        ]
+      },
+      {
+        "sample_id": 2,
+        "original_prediction": "ATTACK",
+        "original_confidence": 100.0,
+        "adversarial_prediction": "ATTACK",
+        "adversarial_confidence": 99.9,
+        "evasion_success": false,
+        "features": [
+          {
+            "feature": "Destination Port",
+            "original": 80.0,
+            "adversarial": 80.0,
+            "delta": 0.0,
+            "is_immutable": true
+          },
+          {
+            "feature": "Flow Duration",
+            "original": 65319.994,
+            "adversarial": 0.0,
+            "delta": -65319.994,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Fwd Packets",
+            "original": 57.0,
+            "adversarial": 57.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Backward Packets",
+            "original": 2.0,
+            "adversarial": 2.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Fwd Packets",
+            "original": 63837.85,
+            "adversarial": 63837.85,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Bwd Packets",
+            "original": 144.087,
+            "adversarial": 3385.023,
+            "delta": 3240.936,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Max",
+            "original": 1460.0,
+            "adversarial": 1222.182,
+            "delta": -237.818,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Min",
+            "original": 300.0,
+            "adversarial": 300.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Mean",
+            "original": 1119.962,
+            "adversarial": 1119.962,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Std",
+            "original": 34.43,
+            "adversarial": 34.43,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Max",
+            "original": 108.065,
+            "adversarial": 450.314,
+            "delta": 342.249,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Min",
+            "original": -0.0,
+            "adversarial": 210.431,
+            "delta": 210.431,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Std",
+            "original": 10.0,
+            "adversarial": 62.808,
+            "delta": 52.808,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Mean",
+            "original": 1126.207,
+            "adversarial": 15147.238,
+            "delta": 14021.031,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Min",
+            "original": 1.0,
+            "adversarial": 0.0,
+            "delta": -1.0,
+            "is_immutable": false
+          }
+        ]
+      },
+      {
+        "sample_id": 3,
+        "original_prediction": "ATTACK",
+        "original_confidence": 99.95,
+        "adversarial_prediction": "ATTACK",
+        "adversarial_confidence": 98.91,
+        "evasion_success": false,
+        "features": [
+          {
+            "feature": "Destination Port",
+            "original": 80.0,
+            "adversarial": 80.0,
+            "delta": 0.0,
+            "is_immutable": true
+          },
+          {
+            "feature": "Flow Duration",
+            "original": 881746.001,
+            "adversarial": 881746.001,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Fwd Packets",
+            "original": 36.0,
+            "adversarial": 21.282,
+            "delta": -14.718,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Backward Packets",
+            "original": 28.0,
+            "adversarial": 28.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Fwd Packets",
+            "original": 15243.877,
+            "adversarial": 700.151,
+            "delta": -14543.726,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Bwd Packets",
+            "original": 3360.0,
+            "adversarial": 3360.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Max",
+            "original": 800.0,
+            "adversarial": 562.182,
+            "delta": -237.818,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Min",
+            "original": 50.0,
+            "adversarial": 50.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Mean",
+            "original": 423.441,
+            "adversarial": 423.441,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Std",
+            "original": 120.0,
+            "adversarial": 120.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Std",
+            "original": 50.0,
+            "adversarial": 102.808,
+            "delta": 52.808,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow Bytes/s",
+            "original": 21098.672,
+            "adversarial": 0.0,
+            "delta": -21098.672,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Header Length",
+            "original": 720.0,
+            "adversarial": 425.636,
+            "delta": -294.364,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Header Length",
+            "original": 560.0,
+            "adversarial": 471.572,
+            "delta": -88.428,
+            "is_immutable": false
+          },
+          {
+            "feature": "Max Packet Length",
+            "original": 800.0,
+            "adversarial": 514.272,
+            "delta": -285.728,
+            "is_immutable": false
+          }
+        ]
+      },
+      {
+        "sample_id": 4,
+        "original_prediction": "ATTACK",
+        "original_confidence": 100.0,
+        "adversarial_prediction": "ATTACK",
+        "adversarial_confidence": 99.91,
+        "evasion_success": false,
+        "features": [
+          {
+            "feature": "Destination Port",
+            "original": 80.0,
+            "adversarial": 80.0,
+            "delta": 0.0,
+            "is_immutable": true
+          },
+          {
+            "feature": "Flow Duration",
+            "original": 1237773.004,
+            "adversarial": 1237773.004,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Fwd Packets",
+            "original": 61.0,
+            "adversarial": 46.282,
+            "delta": -14.718,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Backward Packets",
+            "original": 34.0,
+            "adversarial": 34.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Fwd Packets",
+            "original": 14860.321,
+            "adversarial": 14860.321,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Bwd Packets",
+            "original": 4080.0,
+            "adversarial": 4080.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Max",
+            "original": 800.0,
+            "adversarial": 1037.818,
+            "delta": 237.818,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Min",
+            "original": 50.0,
+            "adversarial": 50.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Mean",
+            "original": 243.612,
+            "adversarial": 69.926,
+            "delta": -173.686,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Std",
+            "original": 120.0,
+            "adversarial": 120.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Min",
+            "original": 20.0,
+            "adversarial": 230.431,
+            "delta": 210.431,
+            "is_immutable": false
+          },
+          {
+            "feature": "Bwd Packet Length Mean",
+            "original": 120.0,
+            "adversarial": 331.138,
+            "delta": 211.138,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Mean",
+            "original": 12893.469,
+            "adversarial": 26914.5,
+            "delta": 14021.031,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Max",
+            "original": 618886.493,
+            "adversarial": 831984.457,
+            "delta": 213097.964,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd IAT Total",
+            "original": 1113995.692,
+            "adversarial": 1409187.052,
+            "delta": 295191.36,
+            "is_immutable": false
+          }
+        ]
+      },
+      {
+        "sample_id": 5,
+        "original_prediction": "ATTACK",
+        "original_confidence": 99.99,
+        "adversarial_prediction": "ATTACK",
+        "adversarial_confidence": 99.92,
+        "evasion_success": false,
+        "features": [
+          {
+            "feature": "Destination Port",
+            "original": 443.0,
+            "adversarial": 443.0,
+            "delta": 0.0,
+            "is_immutable": true
+          },
+          {
+            "feature": "Flow Duration",
+            "original": 57838.994,
+            "adversarial": 57838.994,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Fwd Packets",
+            "original": 111.0,
+            "adversarial": 96.282,
+            "delta": -14.718,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Backward Packets",
+            "original": 3.0,
+            "adversarial": 3.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Fwd Packets",
+            "original": 84546.083,
+            "adversarial": 70002.356,
+            "delta": -14543.727,
+            "is_immutable": false
+          },
+          {
+            "feature": "Total Length of Bwd Packets",
+            "original": 204.14,
+            "adversarial": 204.14,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Max",
+            "original": 1460.0,
+            "adversarial": 1460.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Min",
+            "original": 300.0,
+            "adversarial": 300.0,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Mean",
+            "original": 761.676,
+            "adversarial": 761.676,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Fwd Packet Length Std",
+            "original": 42.718,
+            "adversarial": 42.718,
+            "delta": 0.0,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow Bytes/s",
+            "original": 1465024.861,
+            "adversarial": 3291866.911,
+            "delta": 1826842.05,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow Packets/s",
+            "original": 1970.648,
+            "adversarial": 0.0,
+            "delta": -1970.648,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Mean",
+            "original": 516.42,
+            "adversarial": 14537.451,
+            "delta": 14021.031,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Std",
+            "original": 170.972,
+            "adversarial": 1070.569,
+            "delta": 899.597,
+            "is_immutable": false
+          },
+          {
+            "feature": "Flow IAT Max",
+            "original": 23135.594,
+            "adversarial": 236233.558,
+            "delta": 213097.964,
+            "is_immutable": false
+          }
+        ]
+      }
+    ],
+    "timestamp": "2026-11-12T12:07:14.644222"
+  }
+}

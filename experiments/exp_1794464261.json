@@ -1,0 +1,189 @@
+{
+  "id": "exp_1794464261",
+  "timestamp": "2026-11-12 11:47:41",
+  "type": "model_training",
+  "details": {
+    "model_id": "pytorch_mlp_1794464253213",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794464253213.pt",
+    "hyperparameters": {
+      "epochs": 15,
+      "batch_size": 64,
+      "learning_rate": 0.001
+    },
+    "created_at": "2026-11-12T11:47:41.807449",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 3.372,
+      "inference_time_ms": 0.0038,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.2028,
+          "accuracy": 0.9543
+        },
+        {
+          "epoch": 2,
+          "loss": 0.0387,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 3,
+          "loss": 0.0193,
+          "accuracy": 0.9986
+        },
+        {
+          "epoch": 4,
+          "loss": 0.012,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 5,
+          "loss": 0.0072,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 6,
+          "loss": 0.0067,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 7,
+          "loss": 0.0049,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 8,
+          "loss": 0.0045,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 9,
+          "loss": 0.0031,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 10,
+          "loss": 0.0021,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 11,
+          "loss": 0.0019,
+          "accuracy": 0.9996
+        },
+        {
+          "epoch": 12,
+          "loss": 0.0015,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 13,
+          "loss": 0.0013,
+          "accuracy": 1.0
+        },
+        {
+          "epoch": 14,
+          "loss": 0.0031,
+          "accuracy": 0.9993
+        },
+        {
+          "epoch": 15,
+          "loss": 0.0024,
+          "accuracy": 0.9993
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794464253213.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794464253213.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  }
+}

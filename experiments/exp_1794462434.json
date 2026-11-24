@@ -1,0 +1,104 @@
+{
+  "id": "exp_1794462434",
+  "timestamp": "2026-11-12 11:17:14",
+  "type": "robustness_evaluation",
+  "details": {
+    "model_id": "pytorch_mlp_1794462376311",
+    "evaluated_samples": 150,
+    "attack_samples_count": 47,
+    "epsilon": 0.2,
+    "robustness_score": 100.0,
+    "clean_accuracy": 100.0,
+    "worst_adversarial_accuracy": 100.0,
+    "max_attack_success_rate": 0.0,
+    "conditions": [
+      {
+        "condition": "Clean Test Data",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "FGSM Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "PGD Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      },
+      {
+        "condition": "Black-Box Query Attack",
+        "accuracy": 100.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "attack_success_rate": 0.0,
+        "evasions": 0
+      }
+    ],
+    "confusion_matrices": {
+      "clean": [
+        [
+          103,
+          0
+        ],
+        [
+          0,
+          47
+        ]
+      ],
+      "fgsm": [
+        [
+          103,
+          0
+        ],
+        [
+          0,
+          47
+        ]
+      ],
+      "pgd": [
+        [
+          103,
+          0
+        ],
+        [
+          0,
+          47
+        ]
+      ],
+      "bbox": [
+        [
+          103,
+          0
+        ],
+        [
+          0,
+          47
+        ]
+      ]
+    },
+    "timestamp": "2026-11-12T11:17:14.785548"
+  }
+}

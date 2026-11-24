@@ -1,0 +1,42 @@
+{
+  "id": "exp_1794504479",
+  "timestamp": "2026-11-12 22:57:59",
+  "type": "adversarial_training",
+  "details": {
+    "defended_model_id": "defended_pytorch_mlp_1794504479086",
+    "base_model_type": "PyTorch MLP",
+    "attack_used_in_training": "FGSM",
+    "epsilon": 0.1,
+    "adversarial_sample_ratio": 0.1,
+    "training_samples_augmented": 2898,
+    "clean_training_samples": 2800,
+    "adversarial_training_samples": 98,
+    "evaluation_samples": 700,
+    "evaluation_attack_samples": 245,
+    "training_time": 0.18,
+    "baseline_metrics": {
+      "clean_accuracy": 99.86,
+      "clean_f1": 0.998,
+      "clean_precision": 0.9959,
+      "clean_recall": 1.0,
+      "adversarial_accuracy": 99.57,
+      "attack_success_rate": 0.82,
+      "evasions": 2
+    },
+    "defended_metrics": {
+      "clean_accuracy": 100.0,
+      "clean_f1": 1.0,
+      "clean_precision": 1.0,
+      "clean_recall": 1.0,
+      "adversarial_accuracy": 100.0,
+      "attack_success_rate": 0.0,
+      "evasions": 0
+    },
+    "comparison": {
+      "asr_reduction_pct": 0.82,
+      "clean_accuracy_impact_pct": 0.14,
+      "robustness_improvement": "Positive"
+    },
+    "timestamp": "2026-11-12T22:57:59.354099"
+  }
+}

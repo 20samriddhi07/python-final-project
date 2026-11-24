@@ -1,0 +1,62 @@
+{
+  "id": "exp_1794112685",
+  "timestamp": "2026-11-08 10:08:05",
+  "type": "model_training",
+  "details": {
+    "model_id": "random_forest_1794132485",
+    "model_type": "Random Forest",
+    "file_path": "C:\\Users\\20sam\\.gemini\\antigravity\\scratch\\Adversarial-IDS\\experiments\\models\\random_forest_1794132485.joblib",
+    "hyperparameters": {
+      "n_estimators": 50,
+      "max_depth": 10
+    },
+    "created_at": "2026-11-08T10:08:05.961940",
+    "metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          455,
+          0
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 245.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.226,
+      "inference_time_ms": 0.0522
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "exp_1794504398",
+  "timestamp": "2026-11-12 22:56:38",
+  "type": "model_training",
+  "details": {
+    "model_id": "pytorch_mlp_1794504398556",
+    "model_type": "PyTorch MLP",
+    "file_path": "experiments/models/pytorch_mlp_1794504398556.pt",
+    "hyperparameters": {
+      "batch_size": 128,
+      "hidden_dim2": 16,
+      "epochs": 2,
+      "hidden_dim1": 32
+    },
+    "created_at": "2026-11-12T22:56:38.932518",
+    "metrics": {
+      "accuracy": 0.9986,
+      "precision": 0.9959,
+      "recall": 1.0,
+      "f1_score": 0.998,
+      "fpr": 0.0022,
+      "fnr": 0.0,
+      "confusion_matrix": [
+        [
+          454,
+          1
+        ],
+        [
+          0,
+          245
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9978021978021978,
+          "f1-score": 0.9988998899889989,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.9959349593495935,
+          "recall": 1.0,
+          "f1-score": 0.9979633401221996,
+          "support": 245.0
+        },
+        "accuracy": 0.9985714285714286,
+        "macro avg": {
+          "precision": 0.9979674796747968,
+          "recall": 0.9989010989010989,
+          "f1-score": 0.9984316150555992,
+          "support": 700.0
+        },
+        "weighted avg": {
+          "precision": 0.9985772357723577,
+          "recall": 0.9985714285714286,
+          "f1-score": 0.9985720975356192,
+          "support": 700.0
+        }
+      },
+      "training_time": 0.329,
+      "inference_time_ms": 0.0017,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 0.5119,
+          "accuracy": 0.8025
+        },
+        {
+          "epoch": 2,
+          "loss": 0.293,
+          "accuracy": 0.9668
+        }
+      ]
+    },
+    "scaler_file_path": "experiments/models/pytorch_mlp_1794504398556.scaler.joblib",
+    "imputer_file_path": "experiments/models/pytorch_mlp_1794504398556.imputer.joblib",
+    "feature_names": [
+      "Destination Port",
+      "Flow Duration",
+      "Total Fwd Packets",
+      "Total Backward Packets",
+      "Total Length of Fwd Packets",
+      "Total Length of Bwd Packets",
+      "Fwd Packet Length Max",
+      "Fwd Packet Length Min",
+      "Fwd Packet Length Mean",
+      "Fwd Packet Length Std",
+      "Bwd Packet Length Max",
+      "Bwd Packet Length Min",
+      "Bwd Packet Length Mean",
+      "Bwd Packet Length Std",
+      "Flow Bytes/s",
+      "Flow Packets/s",
+      "Flow IAT Mean",
+      "Flow IAT Std",
+      "Flow IAT Max",
+      "Flow IAT Min",
+      "Fwd IAT Total",
+      "Bwd IAT Total",
+      "Fwd Header Length",
+      "Bwd Header Length",
+      "Fwd Packets/s",
+      "Bwd Packets/s",
+      "Min Packet Length",
+      "Max Packet Length",
+      "Packet Length Mean",
+      "Packet Length Std",
+      "FIN Flag Count",
+      "SYN Flag Count",
+      "RST Flag Count",
+      "PSH Flag Count",
+      "ACK Flag Count",
+      "URG Flag Count",
+      "Down/Up Ratio",
+      "Average Packet Size",
+      "Init_Win_bytes_forward",
+      "Init_Win_bytes_backward",
+      "min_seg_size_forward",
+      "Active Mean",
+      "Idle Mean"
+    ],
+    "dataset_source": "cicids2017_sample.csv",
+    "preprocessing_timestamp": "2026-11-12T11:01:44.870889"
+  }
+}
